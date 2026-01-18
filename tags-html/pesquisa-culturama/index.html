@@ -15,11 +15,11 @@
             <!-- dados pessoais -->
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="userName">Nome</label>
-                <input type="text" name="userName" required><br>
+                <label for="name">Nome</label>
+                <input type="text" name="userName" required id="name"><br>
 
                 <label for="age">Idade</label>
-                <input type="number" name="age"min="12" max="100" required><br>
+                <input type="number" id="age"min="12" max="100" required><br>
 
                 <label for="birthdate">Data de nascimento</label>
                 <input type="date" name="birthdate" id="birthdate"><br>
@@ -31,22 +31,22 @@
                 <input type="tel" name="userphone" id="userphone" pattern="[0-9]{11}" placeholder="DDD+numero sem espaços"><br>
 
                 <label for="userimage">Upload de foto</label>
-                <input type="file" accept="image/*" name="userimage"><br>
+                <input type="file" accept="image/*" id="userimage" name="userimage"><br>
             </fieldset>
             <fieldset> 
                 <legend>Perfil</legend>
                 <p>Genero:</p>
-                <input type="radio" name="userGender" value="Femenino">
-                <label for="userGender">Femenino</label>
+                <input type="radio" name="userGender" id="fem" value="Femenino">
+                <label for="fem">Femenino</label>
 
-                <input type="radio" name="userGender" value="Masculino">
-                <label for="userGender">Masculino</label>
+                <input type="radio" name="userGender" id="masc" value="Masculino">
+                <label for="masc">Masculino</label>
 
-                <input type="radio" name="userGender" value="Notinfotmat">
-                <label for="userGender">Prefiro não informar</label> <br>
+                <input type="radio" name="userGender" id="Notinfotmat" value="Notinfotmat">
+                <label for="Notinfotmat">Prefiro não informar</label> <br>
 
                 <label for="maritalStatus">Estado Civil</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="userMaritalStatus">
                     <option value="notselect">selecione...</option>
                     <option value="casado">casado</option>
                     <option value="casado">Solteiro</option>
@@ -89,8 +89,31 @@
                 <input type="text" name="userCity">
             </fieldset>
             <fieldset>
-                <legend></legend>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais:</p>
+                <input type="checkbox" name="social" id="instagram" value="instagram">
+                <label for="instagram">instagram</label><br>
                 
+                <input type="checkbox" name="social" id="Facebook" value="Facebook">
+                <label for="Facebook">Facebook</label><br>
+
+                <input type="checkbox" name="social" id="Linkedin" value="Linkedin">
+                <label for="Linkedin">Linkedin</label><br>
+
+                <input type="checkbox" name="social" id="X" value="X">
+                <label for="social">X</label><br>
+
+                <label for="musicstyle">Estilo de musica</label>
+                <input list="styleTypes" type="text" id="musicstyle" name="userMusicStyle">
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="pop">
+                    <option value="samba">
+                    <option value="sertanejo">
+                </datalist>
+                <br>
+                <label for="color">Cor favorita</label>
+                <input type="color" name="userFavoritColor" id="color">
             </fieldset>
         
             <button type="submit">Enviar</button>
