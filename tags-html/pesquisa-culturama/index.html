@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        <form action="" method="get"> <!--action recebe uma url de destino dos dados-->
+            <!-- dados pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" required><br>
+
+                <label for="age">Idade</label>
+                <input type="number" name="age"min="12" max="100" required><br>
+
+                <label for="birthdate">Data de nascimento</label>
+                <input type="date" name="birthdate" id="birthdate"><br>
+
+                <label for="useremail">E-mail</label>
+                <input type="email" name="useremail" id="useremail"><br>
+
+                <label for="userphone">Telefone</label>
+                <input type="tel" name="userphone" id="userphone" pattern="[0-9]{11}" placeholder="DDD+numero sem espaços"><br>
+
+                <label for="userimage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userimage"><br>
+            </fieldset>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
