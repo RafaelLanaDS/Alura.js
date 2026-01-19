@@ -19,7 +19,7 @@
             <h1>Pesquisa Online</h1>
         </header>
         <section>
-            <form action="" method="get"> <!--action recebe uma url de destino dos dados-->
+            <form action="sucesso.html" method="get" target="_blank"> <!--action recebe uma url de destino dos dados-->
                 <!-- dados pessoais -->
                 <fieldset>
                     <legend>Dados Pessoais</legend>
@@ -36,10 +36,13 @@
                     <input type="email" name="useremail" id="useremail"><br>
 
                     <label for="userphone">Telefone</label>
-                    <input type="tel" name="userphone" id="userphone" pattern="[0-9]{11}" placeholder="DDD+numero sem espaços"><br>
+                    <input type="tel" name="userphone" id="userphone" pattern="[0-9]{11}" placeholder="DDD+numero sem espaços" aria-activedescendant="phonehelp"><br>
+                    <small id="phonehelp">Prencha com 11 digitos no formato dd+numero sem espaços ou hifen</small>
 
                     <label for="userimage">Upload de foto</label>
-                    <input type="file" accept="image/*" id="userimage" name="userimage"><br>
+                    <input type="file" accept="image/*" id="userimage" name="userimage" aria-activedescendant="imghelp"><br>
+                    <small id="imghelp">envie uma foto no formato png ou jpg</small>
+
                 </fieldset>
                 <fieldset> 
                     <legend>Perfil</legend>
@@ -144,7 +147,9 @@
                     <input type="checkbox" name="userGetResult" id="userGetResult" value="accepted" required>
                     <label for="userGetResult">Desejo receber o resultado por E-mail</label><br>
                 </fieldset>
-                <button type="submit">Enviar</button>
+                <a href="sucesso.html" target="_blank">
+                    <button type="submit">Enviar</button>
+                </a>
                 <button type="reset">Limpar</button>
             </form>
         </section>
