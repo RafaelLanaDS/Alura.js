@@ -23,6 +23,10 @@
     text-decoration: none;
     color: var(--text-primary-color);
 }
+
+.categoria-cards .cards.single-line.transfer img {
+    margin: 10px 0 20px;
+}
 @media screen and (min-width: 768px){
     .categoria-cards {
         flex-direction: row;
@@ -33,4 +37,14 @@
         width:100%;
     }
 }
-/*  */
+@media screen and (min-width: 1024px){
+    .categoria-cards .cards{
+        width: 430px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+  .categoria-cards .cards {
+    width: 280px;
+  }
+}
