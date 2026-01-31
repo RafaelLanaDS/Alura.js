@@ -1,9 +1,4 @@
-.hero .hero-img{
-    height: 400px;
-    width: 100%;
-}
-
-.bottom-hero .hero-img {
+.hero .hero-img, .hero .hero-imagem{
     height: 400px;
     width: 100%;
 }
@@ -14,7 +9,7 @@
     background-size: cover; /*preencher completamente a área de fundo do elemento*/
 }
 
-.bottom-hero .hero-img {
+.hero .hero-imagem{
     background-image: url(../img/Imagem\ pré\ rodapé\ 1.png);
     background-repeat: no-repeat;
     background-size: cover; /*preencher completamente a área de fundo do elemento*/
@@ -35,7 +30,7 @@
         background-image: url(../img/hero-tablet.jpg);
         background-size: cover; /*preencher completamente a área de fundo do elemento*/
     }
-    .bottom-hero .hero-img {
+    .bottom-hero .hero-imagem {
         height: 400px;
         background-image: url(../img/Imagem\ pré\ rodapé\ 1.png);
         background-repeat: no-repeat;
