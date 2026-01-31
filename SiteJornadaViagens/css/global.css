@@ -74,10 +74,12 @@ section.hero {
 }
 .content-title{
   font-size: 28px;
+  margin-bottom:0 0 24px;
 }
 .content-text{
   font-size: 28px;
   line-height: 32px;
+  margin-bottom: 24px;
 }
 
 .button {

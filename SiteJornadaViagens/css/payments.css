@@ -3,13 +3,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     height: 460px;
-    margin-top: 24px;
+
     width: 100%;
 }
 
-.payments .content-container{
-    display: flex;
-}
+
 
 .payments .content-container  .image-gallery .image.bag {
     background: url(../img/malas\ japão\ 1.png);
@@ -49,6 +47,7 @@
 
 @media screen and (min-width: 1440px) {
     .payments .content-container{
+        display: flex;
         justify-content: space-between;
     }
     .payments .content-container .text-content {
@@ -56,5 +55,6 @@
     }
     .payments .content-container .image-gallery {
         width: 790px;
+        margin-top: 24px;
     }
 }

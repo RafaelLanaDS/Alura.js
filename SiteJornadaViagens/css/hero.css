@@ -1,10 +1,25 @@
-.hero-img {
+.hero .hero-img{
     height: 400px;
     width: 100%;
+}
+
+.bottom-hero .hero-img {
+    height: 400px;
+    width: 100%;
+}
+
+.hero .hero-img{
     background-image: url(../img/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover; /*preencher completamente a área de fundo do elemento*/
 }
+
+.bottom-hero .hero-img {
+    background-image: url(../img/Imagem\ pré\ rodapé\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover; /*preencher completamente a área de fundo do elemento*/
+}
+
 .hero h2 {
     padding: 88px 24px;
     margin: 0px;
@@ -15,13 +30,20 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero-img {
+    .hero .hero-img {
         height: 620px;
         background-image: url(../img/hero-tablet.jpg);
         background-size: cover; /*preencher completamente a área de fundo do elemento*/
     }
+    .bottom-hero .hero-img {
+        height: 400px;
+        background-image: url(../img/Imagem\ pré\ rodapé\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover; /*preencher completamente a área de fundo do elemento*/
+    }
     .hero h2 {
         padding: 88px 60px;
+        font-size: 32px;
     }
 
 }
@@ -30,6 +52,12 @@
     .hero-img {
         height: 620px;
         background-image: url(../img/hero-desktop.png);
+        background-size: cover; /*preencher completamente a área de fundo do elemento*/
+    }
+    .bottom-hero .hero-img {
+        height: 600px;
+        background-image: url(../img/Imagem-rodape-desktop.png);
+        background-repeat: no-repeat;
         background-size: cover; /*preencher completamente a área de fundo do elemento*/
     }
     .hero h2 {
