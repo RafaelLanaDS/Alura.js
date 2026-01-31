@@ -74,11 +74,9 @@ section.hero {
 }
 .content-title{
   font-size: 28px;
-  font-weight: var(--text-weight);
 }
 .content-text{
   font-size: 28px;
-  font-weight: var(--text-weight);
   line-height: 32px;
 }
 
