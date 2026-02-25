@@ -1,0 +1,5 @@
+atalho para criar arquivo via terminal
+-> New-Item script.js -ItemType File
+
+atalho para abrir o terminal
+-> ctrl+j
